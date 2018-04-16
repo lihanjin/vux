@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* 
+document.documentElement.style.webkitTouchCallout ='none'; //禁止弹出菜单 
+document.documentElement.style.webkitUserSelect = 'none';//禁止选中  
+*/
+
+::-webkit-scrollbar {
+    /*隐藏滚轮*/
+    display: none;
+}
+
+body {
+    padding-top: constant(0); //为导航栏+状态栏的高度 88px            
+    padding-left: constant(0); //如果未竖屏时为0                
+    padding-right: constant(0); //如果未竖屏时为0                
+    padding-bottom: constant(-34px); //为底下圆弧的高度 34px       
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    /* 不可改变字体大小 */
+    -webkit-appearance: none;
+    /*可以改变按钮或*/
+    -webkit-user-drag: none;
+    /*-webkit-user-drag CSS 属性控制能否将元素作为一个整体拖动。*/
+    -webkit-overflow-scrolling: touch;
+}
+
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /*很多Android 浏览器的 a 链接有边框，这里取消它 transparent */
+}
+
+
+/* For WebApp */
+
+body {
+    -webkit-user-select: auto;
+    /* 如果用户长按web网页的文本内容，都会出现选中的行为，提供复制文字等功能。禁止用户选中文字 for iOS */
+}
+
+input {
+    -webkit-user-select: auto;
+    /* 如果用户长按web网页的文本内容，都会出现选中的行为，提供复制文字等功能。禁止用户选中文字 for iOS */
+}
+
+a,
+img {
+    -webkit-touch-callout: none;
+    /* 在IOS浏览器里面，假如用户长按a标签，都会出现默认的弹出菜单事件。禁止用户在新窗口打开页面、如何禁止用户保存图片＼复制图片 for iOS */
+}
+
+html {
+    color: #000;
+    background: #fff;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 12px;
+    background: #f5f5f5;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+del {
+    text-decoration: line-through
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: 500
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 500
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+sub {
+    bottom: -.25em
+}
+
+a:hover {
+    text-decoration: none
+}
+
+ins,
+a {
+    text-decoration: none
+}
